@@ -46,7 +46,7 @@ let items = [
     title: "Laptop",
     description: "Compact and efficient laptop, great for daily tasks, browsing, and productivity on the go.",
     image: "/project/images/item8.jpg",
-    price: 14.99,
+    price: 89.99,
   },
   {
     title: "Sports Shoes",
