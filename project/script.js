@@ -161,12 +161,18 @@ function updateCart() {
     cartContainer.appendChild(cartCount);
 
     //This part calculates the free shipping
-if (total >100) {
+if (total >= 100) {
   let freeCargo = document.createElement('div');
     freeCargo.className = 'free-cargo';
     freeCargo.innerHTML = `<strong>Free shipping over 100 DKK! </strong>`;
     cartContainer.appendChild(freeCargo);
 } 
+else {
+  let freeCargo = document.createElement('div');
+    freeCargo.className = 'free-cargo';
+    freeCargo.innerHTML = `<strong>You need to add ${(100 - total).toFixed(2)} DKK for free shipping! </strong>`;
+    cartContainer.appendChild(freeCargo);
+}
 
 // This part calculates the total price
     let totalDiv = document.createElement('div');
